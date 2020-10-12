@@ -1,2 +1,11 @@
 server:
   port: 8086
+spring:
+  kafka:
+    bootstrap-servers: http://172.18.20.46:9092,http://172.18.20.46:9093,http://172.18.20.46:9094
+    producer:
+      retries: 0
+      batch-size: 16384
+      buffer-memory: 33554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
