@@ -21,7 +21,11 @@ class KafkaproducerdemoApplicationTests {
 	@Test
 	public void kafkaProducer() {
 		try {
-			this.kafkaProducer.send();
+			kafkaProducer.send();
+			kafkaProducer.send();
+			kafkaProducer.send();
+			kafkaProducer.send();
+			kafkaProducer.send();
 		} catch (JsonProcessingException e) {
 			log.error(e.getClass().getName() + ":", e);
 		}
